@@ -1,24 +1,36 @@
 body {
   font-family: sans-serif;
+  margin: 0;
+}
+.map {
+  display: none;
+}
+path:hover {
+  fill: #ff554b;
+  cursor: pointer;
+}
+.amcharts-map-image:hover {
+  fill: #00bfbd !important;
+}
+
+/* PAGES
+-------------------------------------------------*/
+#main-page {
+  height: 25px;
+  width: 375px;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
   margin: auto;
-  max-width: 1280px;
+  background-color: #27ae60;
+  display: none;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+#next-page {
+  height: 25px;
+  width: 375px;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  background-color: #e74c3c;
+  display: none;
 }
-
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #ffffff;
-}
-
