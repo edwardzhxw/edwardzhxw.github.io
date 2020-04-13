@@ -9,3 +9,6 @@ pages:
     - public
   only:
   - dev
+  tags:
+    - appbuilder
+
