@@ -1,36 +1,85 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  overflow: hidden;
 }
-.map {
-  display: none;
+.back {
+  position: fixed;
+  left: 100px;
+  bottom: 50px;
+  padding: 10px;
+  line-height: normal;
+  background: #00bfbd;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
 }
-path:hover {
+#view-1 path {
+  fill: antiquewhite;
+}
+#view-1 path[countryid="CN"]:hover {
   fill: #ff554b;
+  cursor: pointer;
+}
+#view-2 path[countryid="CN-44"]:hover {
+  fill: #e68568;
+  cursor: pointer;
+}
+#view-2 path[countryid="CN-31"]:hover {
+  fill: #e68568;
   cursor: pointer;
 }
 .amcharts-map-image:hover {
   fill: #00bfbd !important;
 }
-
-/* PAGES
--------------------------------------------------*/
-#main-page {
-  height: 25px;
-  width: 375px;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  background-color: #27ae60;
-  display: none;
+.marker g {
+  cursor: pointer;
+}
+.marker path {
+  stroke: transparent;
+  stroke-width: 8px;
 }
 
-#next-page {
-  height: 25px;
-  width: 375px;
+.view {
   position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  background-color: #e74c3c;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  perspective: 1200px;
   display: none;
+}
+.view.view--block {
+  display: block;
+}
+.view.view--visible .view__inner {
+  transform: rotate(0deg) !important;
+  opacity: 1 !important;
+}
+.view.view--up .view__inner {
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0%;
+  opacity: 0;
+}
+.view.view--down .view__inner {
+  transform: rotateX(90deg);
+  transform-origin: 50% 100%;
+  opacity: 0;
+}
+
+.view__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100vh;
+  color: #2bd996;
+  transition: opacity 0.6s ease;
+  transition-property: opacity, transform;
+}
+
+.view__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
