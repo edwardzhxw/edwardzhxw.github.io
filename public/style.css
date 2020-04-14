@@ -3,41 +3,39 @@ body {
   margin: 0;
   overflow: hidden;
 }
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#world circle {
+	stroke: transparent;
+  stroke-width: 6px;
+}
+
+#south-asia {
+	fill: rgb(242,200,1);
+	cursor: pointer;
+}
+#south-asia:hover {
+  fill: rgb(202,145,16);
+}
 .back {
   position: fixed;
-  left: 100px;
-  bottom: 50px;
+  left: 20px;
+  bottom: 20px;
   padding: 10px;
+  width: 75px;
+  height: 75px;
   line-height: normal;
-  background: #00bfbd;
   color: white;
-  border-radius: 10px;
   cursor: pointer;
 }
-#view-1 path {
-  fill: antiquewhite;
+.back img {
+  width: 100%;
 }
-#view-1 path[countryid="CN"]:hover {
-  fill: #ff554b;
+.marker {
   cursor: pointer;
-}
-#view-2 path[countryid="CN-44"]:hover {
-  fill: #e68568;
-  cursor: pointer;
-}
-#view-2 path[countryid="CN-31"]:hover {
-  fill: #e68568;
-  cursor: pointer;
-}
-.amcharts-map-image:hover {
-  fill: #00bfbd !important;
-}
-.marker g {
-  cursor: pointer;
-}
-.marker path {
-  stroke: transparent;
-  stroke-width: 8px;
 }
 
 .view {
