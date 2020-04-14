@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-wf-page="5e944547e1cc7ab600ada876" data-wf-site="5e944547e1cc7ac98dada875">
   <head>
     <meta charset="utf-8">
     <title>italki</title>
@@ -3774,15 +3774,10 @@ xmlns="http://www.w3.org/2000/svg" height="95vh" viewBox="0 0 1070 534" version=
     xmlns="http://www.w3.org/2000/svg">
 
 </svg>
-
-        <div class="back" data-to-view="#view-1">
-          <img src="./back.jpg" alt="back" />
-        </div>
       </div>
     </section>
     <section class="view" id="view-3">
       <div class="view__inner_3">
-        <div class="back"></div>
         <div class="hero-section">
          <div class="w-row">
           <div class="country-left w-col w-col-5">
@@ -3848,6 +3843,7 @@ xmlns="http://www.w3.org/2000/svg" height="95vh" viewBox="0 0 1070 534" version=
         </div>
       </div>
     </section>
+    <div class="back" data-to-view="#view-1"></div>
   </body>
   <script>
     var nav = {
@@ -3886,7 +3882,6 @@ xmlns="http://www.w3.org/2000/svg" height="95vh" viewBox="0 0 1070 534" version=
     //check if new view is the
     //view that is currently open
     if(newViewEl === currOpenViewEl) return;
-    
     //close currently open view
     this._closeView(currOpenViewEl, function(done){
       //open new view
