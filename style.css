@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .logo {
   position: absolute;
@@ -50,16 +50,19 @@ body {
 .view.view--block {
   display: block;
 }
-.view.view--visible .view__inner {
+.view.view--visible .view__inner,
+.view.view--visible .view__inner_3 {
   transform: rotate(0deg) !important;
   opacity: 1 !important;
 }
-.view.view--up .view__inner {
+.view.view--up .view__inner,
+.view.view--up .view__inner_3 {
   transform: rotateX(-90deg);
   transform-origin: 50% 0%;
   opacity: 0;
 }
-.view.view--down .view__inner {
+.view.view--down .view__inner,
+.view.view--down .view__inner_3 {
   transform: rotateX(90deg);
   transform-origin: 50% 100%;
   opacity: 0;
