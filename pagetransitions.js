@@ -45,7 +45,6 @@ var PageTransitions = (function() {
 		// } );
 
 	}
-
 	function goToPage(page, options ) {
 		var animation = (options.animation) ? options.animation : options;
 
