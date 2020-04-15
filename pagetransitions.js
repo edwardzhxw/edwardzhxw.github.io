@@ -1,7 +1,6 @@
 var PageTransitions = (function() {
 
 	var $pages = $( '.pt-page' ),
-		pagesCount = $pages.length,
 		current = 0,
 		isAnimating = false,
 		endCurrPage = false,
@@ -364,7 +363,10 @@ var PageTransitions = (function() {
 	}
 
 	function resetPage( $outpage, $inpage ) {
-		$outpage.removeClass('pt-page-current');
+		// $outpage.removeClass('pt-page-current');
+		console.log($outpage)
+		console.log($inpage)
+		$outpage.attr( 'class', $outpage.data( 'originalClassList' ) );
 		$inpage.attr( 'class', $inpage.data( 'originalClassList' ) + ' pt-page-current' );
 	}
 
