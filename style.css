@@ -31,9 +31,6 @@ body {
   color: white;
   cursor: pointer;
 }
-.back img {
-  width: 100%;
-}
 .marker {
   cursor: pointer;
 }
